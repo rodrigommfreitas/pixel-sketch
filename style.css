@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 /*  https://www.dafont.com/game-over.font */
 @font-face {
@@ -11,8 +11,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-    user-select: none
+    user-select: none;
 }
 
 body {
@@ -73,21 +72,10 @@ main {
 }
 
 /* ------------------------BUTTONS AND STUFF----------------- */
-button,
-#slider {
-    opacity: 0.9;
-}
-
 button:hover,
 #slider:hover {
-    opacity: 1;
     transform: scale(1.015);
     cursor: pointer;
-}
-button:hover {
-    transition: 0.15s;
-    background-color:#2196f3;
-    color:black;
 }
 button {
     height: 40px;
@@ -99,11 +87,12 @@ button {
     font-family: roboto;
     font-weight: bolder;
     font-size: 16px;
-
 }
 
+button:hover,
 button:active,
 .toggled {
+    transition: 0.15s;
     background-color: #2196f3;
     color: black;
 }
@@ -188,4 +177,13 @@ footer {
     align-items: center;
     justify-content: center;
     color:#2196f3;
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 16px;
+    gap: 10px;
+}
+
+footer img {
+    height: 20px;
+    width: 20px;
 }
