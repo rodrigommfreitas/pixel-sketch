@@ -11,11 +11,56 @@
 </head>
 
 <body>
+
     <header>
         <p>PIXEL SKETCH</p>
     </header>
-    <script src="script.js"></script>
+
+    <main>
+
+        <div class="control-panel">
+
+            <div class="color-picker">
+                <div class="color-box">
+                    <input type="color" id="color-select">
+                </div>
+                <span>Color picker</span>
+            </div>
+            <div class="color-picker">
+                <div class="color-box">
+                    <input type="color" id="color-select">
+                </div>
+                <span>Background Color</span>
+            </div>
+            <button id="color-grab">Color Grab</button>
+            <button id="paint-bucket">Paint bucket</button>
+            <button id="color-rainbow">Rainbow Madness</button>
+            <button id="color-shading">Toggle Shading</button>
+            <button id="color-lighting">Toggle Lighting</button>
+            <div class="separator"></div>
+            <button id="eraser">Eraser Mode</button>
+            <button id="clear">Clear</button>
+            <div class="separator"></div>
+            <button id="toggle-grid">Show Grid Lines</button>
+
+            <input type="range" value="24" min="1" max="64" id="slider">
+            <p class="grid-size">Grid size: <span id="range-value">24</span> x <span id="range-value">24</span></p>
+
+        </div>
+
+        <div class="board">
+            <div class="grid"></div>
+        </div>
+
+    </main>
+
+    <footer>
+        <span>Copyright © 2022 rodrigommfreitas </span>
+    </footer>
+
 
 </body>
+
+<script src="script.js"></script>
 
 </html>
