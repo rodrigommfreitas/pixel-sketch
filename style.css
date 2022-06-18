@@ -88,8 +88,9 @@ button {
     font-weight: bolder;
     font-size: 16px;
 }
-
-button:hover,
+button:active {
+    opacity: 0.75;
+}
 button:active,
 .toggled {
     transition: 0.15s;
@@ -153,17 +154,24 @@ input[type="range"]::-moz-range-progress {
     border-radius: 50%;
 }
 
-.grid-size {
+#grid-size {
     margin-top: 10px;
     align-self: center;
 }
 /* ----------------------GRID-------------------- */
-.grid {
+#grid {
+    display: grid;
     width: 640px;
     height: 640px;
     background-color: #24292E;
     box-sizing: content-box;
     border: 2px solid #2196f3;
+}
+
+.grid-element {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid black;
 }
 /* ----------------------FOOTER-------------------- */
 footer {
