@@ -11,15 +11,12 @@
 </head>
 
 <body>
-
     <header>
         <p>PIXEL SKETCH</p>
     </header>
 
     <main>
-
         <div class="control-panel">
-
             <div class="color-picker">
                 <div class="color-box">
                     <input type="color" id="color-select">
@@ -32,6 +29,7 @@
                 </div>
                 <span>Background Color</span>
             </div>
+
             <button id="color-grab">Color Grab</button>
             <button id="paint-bucket">Paint Bucket</button>
             <button id="color-rainbow">Rainbow Madness</button>
@@ -45,18 +43,21 @@
 
             <input type="range" value="16" min="1" max="64" id="slider" oninput="updateGridSize(this.value)">
             <p id="grid-size">Grid size: 16 x 16</p>
-
         </div>
 
         <div class="board">
             <div id="grid"></div>
         </div>
-
     </main>
 
     <footer>
-        <span>Copyright © 2022 rodrigommfreitas </span>
-        <a href="https://github.com/rodrigommfreitas/pixel-sketch" target="_blank"><img src="/github-logo.png"></a>
+        <span>Copyright ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script> rodrigommfreitas
+        </span>
+        <a href="https://github.com/rodrigommfreitas/pixel-sketch" target="_blank" draggable="false"><img
+                src="/github-logo.png" draggable="false"></a>
     </footer>
 
     <script src="script.js"></script>

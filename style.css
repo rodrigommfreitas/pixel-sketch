@@ -40,7 +40,7 @@ header p {
 
 /* ---------------------MAIN LAYOUT---------------------- */
 main {
-    margin-top:25px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
 }
@@ -77,6 +77,7 @@ button:hover,
     transform: scale(1.015);
     cursor: pointer;
 }
+
 button {
     height: 40px;
     background-color: #24292E;
@@ -88,9 +89,13 @@ button {
     font-weight: bolder;
     font-size: 16px;
 }
+
 button:active {
-    opacity: 0.75;
+    opacity: 0.5;
+    transform: scale(0.99);
+    transition: 0.25s;
 }
+
 button:active,
 .toggled {
     transition: 0.15s;
@@ -99,11 +104,16 @@ button:active,
 }
 
 input[type="color"] {
-    display: block;
+    background-color: #2B3036;
+    display:block;
     outline: none;
     border: none;
     width: 60px;
     height: 35px;
+}
+
+input[type="color"]:hover {
+    cursor: pointer;
 }
 
 .color-picker {
@@ -130,15 +140,19 @@ input[type="color"] {
     margin: 14px;
     background-color: #2196f3;
 }
+
 /* --------------------------RANGE SLIDER-------------------------- */
 input[type="range"] {
     width: 100%;
     align-self: center;
 }
-input[type="range"]::-moz-range-progress {
+
+input[type="range"]::-moz-range-progress,
+input[type="range"]::-webkit-progress-bar {
     background-color: #2196f3;
     border-radius: 10px;
 }
+
 #slider {
     -webkit-appearance: none;
     height: 5px;
@@ -158,6 +172,7 @@ input[type="range"]::-moz-range-progress {
     margin-top: 10px;
     align-self: center;
 }
+
 /* ----------------------GRID-------------------- */
 #grid {
     display: grid;
@@ -168,11 +183,16 @@ input[type="range"]::-moz-range-progress {
     border: 2px solid #2196f3;
 }
 
+#grid:hover {
+    cursor: crosshair;
+}
+
 .grid-element {
     box-sizing: border-box;
     background-color: transparent;
     border: 1px solid black;
 }
+
 /* ----------------------FOOTER-------------------- */
 footer {
     position: absolute;
@@ -181,10 +201,10 @@ footer {
     width: 100vw;
     background-color: #2B3036;
     border-top: 1px solid #2196f3;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    color:#2196f3;
+    color: #2196f3;
     font-family: roboto;
     font-weight: bold;
     font-size: 16px;
@@ -194,4 +214,17 @@ footer {
 footer img {
     height: 20px;
     width: 20px;
+}
+
+footer a:hover,
+footer a:active {
+    transition: 0.25s;
+}
+
+footer a:hover {
+    transform: scale(1.1);
+}
+
+footer a:active {
+    transform: scale(0.8);
 }
