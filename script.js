@@ -129,7 +129,6 @@ function bucketPaint(e) {
         }
         flow(xPos, yPos);
     }
-    setMode('color');
 }
 
 // https://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors
