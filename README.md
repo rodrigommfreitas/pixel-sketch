@@ -1,4 +1,4 @@
-# pixel-sketch
+# Pixel Sketch
 Etch-a-Sketch type game
 
 #
