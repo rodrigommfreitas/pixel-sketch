@@ -11,7 +11,7 @@ A simple and fun drawing game developed with the purpose of practicing and impro
 - Create a grid with a size up to 64x64.
 ###### **Future implementation ideas**
  - Save your current art as an image file;
- - Undo functionality;
+ - Undo functionality.
 ## [Live App](https://rodrigommfreitas.github.io/pixel-sketch/)
 ![alt text](https://raw.githubusercontent.com/rodrigommfreitas/pixel-sketch/main/pixel-sketch.png "App Preview")
 Project developed while following [The Odin Project's](https://www.theodinproject.com/) Foundations course.
